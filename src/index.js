@@ -1,16 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
 import Infinite from "react-infinite";
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center",
-  border: "1px solid palevioletred",
-  width: "80%",
-  margin: "30px auto",
-  height: "calc(100vh - 50px)",
-  boxSizing: "border-box",
-  background: "#fff"
-};
 
 class App extends React.Component {
   constructor() {
@@ -33,6 +23,16 @@ class App extends React.Component {
     });
   }
   render() {
+    const styles = {
+      fontFamily: "sans-serif",
+      textAlign: "center",
+      border: "1px solid palevioletred",
+      width: "80%",
+      margin: "30px auto",
+      height: "calc(100vh - 50px)",
+      boxSizing: "border-box",
+      background: "#fff"
+    };
     return (
       <div style={styles} ref={this.containerref}>
         <Header />
